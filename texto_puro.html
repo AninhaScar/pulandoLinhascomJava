@@ -1,0 +1,38 @@
+<meta charset = "UTF-8">
+
+<script>
+    //funções são sempre colocadas no início do código//
+
+    function mudarLinha() {
+        document.write("<br>");
+    }
+    /*várias formas de pular linha em javascript*/
+    document.write("Algumas formas de pular linha entre textos <br>");
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+    document.write("<br>"); /*é possível pular a linha colocando o comando como um document.write*/
+    document.write("Joaquim tem " + (ano - 1996) + " anos <br>");
+    /*ou colocando <br> ao final do texro a ser apresentado*/
+    
+    ano = 2017;
+    var pulaLinha = "<br>"
+    /* uma outra forma de pular linha é dando um comando por uma varíavel*/
+
+    document.write("Barney tem " + (ano - 1976) + " anos");
+    document.write(pulaLinha);
+
+    /*fazendo o mesmo conteúdo porém agora com função*/
+
+    document.write("Itens abaixo são espaçados através de fução <br>");
+
+    var ano = 2016;
+
+    document.write("Flávio tem " + (ano - 1977) + " anos");
+
+    mudarLinha();
+
+    document.write("Linha pulada através de função");
+
+</script>
